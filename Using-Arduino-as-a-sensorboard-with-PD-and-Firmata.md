@@ -1,4 +1,4 @@
-#Setting up your Arduino for Firmata#
+# Setting up your Arduino for Firmata
 
 Firmata control of the Arduino requires loading an Arduino with the special Firmata sketch. You can download the Arduino software from the Arduino website. After opening the Arduino IDE, follow these steps to install Firmata on your Arduino:
 Click File->Examples->Firmata->StandardFirmata
