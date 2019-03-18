@@ -1,0 +1,47 @@
+#N canvas 114 23 664 519 16;
+#X obj 288 466 dac~;
+#X obj 281 381 readsf~;
+#X msg 280 331 open \$1;
+#X obj 280 296 openpanel;
+#X msg 365 253 bang;
+#X obj 278 251 bng 25 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 326 253 ==;
+#X msg 586 284 1;
+#X msg 586 334 0;
+#X msg 169 116 open ./sample1.wav;
+#X msg 126 154 open ./sample8.wav;
+#X msg 70 205 open ./sample8.wav 88000;
+#X text 74 249 with offset;
+#X obj 351 423 s eof;
+#X obj 124 68 r eof;
+#X obj 571 123 delay 2;
+#X obj 586 245 spigot;
+#X obj 616 198 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 487 198 loop on off;
+#X obj 571 82 r eof;
+#X obj 267 11 bng 25 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 267 41 t b b;
+#X msg 264 75 1;
+#X connect 1 0 0 0;
+#X connect 1 0 0 1;
+#X connect 1 1 13 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 5 0 3 0;
+#X connect 7 0 1 0;
+#X connect 8 0 1 0;
+#X connect 9 0 1 0;
+#X connect 10 0 1 0;
+#X connect 11 0 1 0;
+#X connect 14 0 10 0;
+#X connect 15 0 16 0;
+#X connect 16 0 7 0;
+#X connect 17 0 16 1;
+#X connect 19 0 15 0;
+#X connect 20 0 21 0;
+#X connect 21 0 22 0;
+#X connect 21 1 10 0;
+#X connect 22 0 1 0;

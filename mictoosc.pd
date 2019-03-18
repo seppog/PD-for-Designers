@@ -1,0 +1,37 @@
+#N canvas 95 23 1089 649 24;
+#X obj 489 131 env~;
+#X obj 585 364 print;
+#X obj 677 214 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 676 168 - 100;
+#X text 554 117 loudness of signal;
+#X obj 376 396 osc~ 400;
+#X obj 395 472 *~;
+#X obj 390 537 dac~;
+#X obj 535 467 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 535 300 > 60;
+#X obj 377 206 sigmund~ pitch;
+#X obj 376 256 moses 0;
+#X obj 376 337 mtof;
+#X floatatom 585 249 5 0 0 0 - - -;
+#X obj 738 214 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 9864 1;
+#X obj 356 35 adc~;
+#X obj 358 84 *~ 0.3;
+#X text 52 239 divides the stream of numbers ->;
+#X connect 0 0 3 0;
+#X connect 0 0 9 0;
+#X connect 3 0 2 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 6 0 7 1;
+#X connect 8 0 6 1;
+#X connect 9 0 6 1;
+#X connect 10 0 11 0;
+#X connect 11 1 12 0;
+#X connect 11 1 14 0;
+#X connect 12 0 5 0;
+#X connect 13 0 9 1;
+#X connect 15 0 16 0;
+#X connect 16 0 0 0;
+#X connect 16 0 10 0;

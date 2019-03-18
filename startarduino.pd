@@ -1,0 +1,44 @@
+#N canvas 949 216 577 842 10;
+#X obj 50 495 arduino;
+#X msg 50 74 devices;
+#X text 108 494 1 create an arduino object;
+#X text 112 73 2 look what devices are available;
+#X obj 120 117 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144
+-1 -1 1;
+#X floatatom 120 138 5 0 0 0 - - -;
+#X msg 134 183 close;
+#X text 258 114 3 open appropriarte device;
+#X msg 120 160 open \$1;
+#X text 44 15 first start aruino IDE and transfer STANDARDFIRMATA to
+Your Arduino board then ->;
+#X obj 89 522 print arduino_status;
+#X obj 50 554 print arduino_data;
+#X text 181 183 <- close the serial port;
+#X msg 135 225 version;
+#X msg 135 248 firmware;
+#X text 194 223 5 get protocol version;
+#X text 195 249 4 get firmware specification;
+#X msg 132 313 analogMapping;
+#X msg 133 368 capability;
+#X text 230 309 Query information about the mapping of analog pins
+to digital pin numbers. Depending on firmware version used \, the A0
+pin might be mapped to 14 \, 16 \, or 18;
+#X text 209 363 Query a full report of all supported modes for each
+pin (physical and virtual). The response contains a message for each
+supported mode by a certain pin. Also the reported pin numbers might
+be greater than the actual physical pins on the board. For instance
+\, Arduino Leonardo supports 12 analog inputs. A6-A11 are mapped to
+virtual digital pins 24-29 (which are again mapped on physical digital
+pins);
+#X text 118 462 finally look at help files;
+#X connect 0 0 11 0;
+#X connect 0 1 10 0;
+#X connect 1 0 0 0;
+#X connect 4 0 5 0;
+#X connect 5 0 8 0;
+#X connect 6 0 0 0;
+#X connect 8 0 0 0;
+#X connect 13 0 0 0;
+#X connect 14 0 0 0;
+#X connect 17 0 0 0;
+#X connect 18 0 0 0;
