@@ -1,0 +1,37 @@
+#N canvas 743 109 791 599 10;
+#X text 52 30 some simple probles \, how to solve them in pd (at least
+my 50c);
+#X text 46 82 scaling;
+#X obj 55 141 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 51 165 / 127;
+#X obj 52 189 * 10;
+#X text 98 162 divide by the input range;
+#X text 100 187 multiply with the input range;
+#X text 49 118 e.g. from 0-127 to 0 to 10;
+#X floatatom 52 212 5 0 0 0 - - -;
+#X obj 321 140 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 365 184 divide by the input range;
+#X text 367 198 multiply with the input range;
+#X text 315 117 e.g. from 0-127 to 0 to 10;
+#X floatatom 317 190 5 0 0 0 - - -;
+#X obj 317 164 expr $f1/127*10;
+#X text 421 164 the same but You need an external;
+#X text 56 273 if true than do...;
+#X obj 69 361 select 1;
+#X obj 69 338 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 69 383 true;
+#X msg 114 383 oh no false;
+#X obj 68 415 print;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 8 0;
+#X connect 9 0 14 0;
+#X connect 14 0 13 0;
+#X connect 17 0 19 0;
+#X connect 17 1 20 0;
+#X connect 18 0 17 0;
+#X connect 19 0 21 0;
+#X connect 20 0 21 0;

@@ -1,0 +1,9 @@
+#N canvas 335 106 575 493 16;
+#X msg 148 100 bang;
+#X obj 149 132 urn 49;
+#X obj 149 191 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 28
+-257985 -258113 -1 9 256;
+#X obj 122 317 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144
+-1 -1 0;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;

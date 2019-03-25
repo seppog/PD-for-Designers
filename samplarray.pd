@@ -1,4 +1,4 @@
-#N canvas 558 57 1280 1000 10;
+#N canvas 0 109 800 555 10;
 #X floatatom 34 54 0 0 0 0 - - -;
 #X text 241 215 read from the table;
 #X text 83 54 <-- frequency (Hz.);
@@ -23,13 +23,13 @@
 #N canvas 0 0 450 300 (subpatch) 0;
 #X array cmsarray-out 44100 float 0;
 #X coords 0 1.02 44100 -1.02 200 130 1 0 0;
-#X restore 632 200 graph;
+#X restore 486 187 graph;
 #N canvas 0 0 450 300 (subpatch) 0;
 #X array cmsarray 44103 float 0;
 #X coords 0 1.02 44103 -1.02 200 130 1 0 0;
-#X restore 628 20 graph;
-#X text 629 153 ---- 44103 samples ----;
-#X text 643 336 ---- 1 second ------;
+#X restore 490 19 graph;
+#X text 496 156 ---- 44103 samples ----;
+#X text 541 321 ---- 1 second ------;
 #X obj 438 340 openpanel;
 #X obj 437 319 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;

@@ -1,4 +1,4 @@
-#N canvas 313 112 859 789 10;
+#N canvas 0 23 800 555 10;
 #X text 28 12 Sound and Interaction \, Objects \, externals and abstractions
 we used so far. If You are uncertain aout what they do look at the
 help file;
@@ -16,14 +16,14 @@ help file;
 #X obj 32 89 /;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array einarray 18 float 1;
-#A 0 0.599974 0.442838 0.385697 0.299987 0.157136 -0.0285702 -0.157136
--0.285702 -0.357127 -0.471408 -0.514263 -0.585689 -0.628544 -0.699969
--0.728539 -0.728539 -0.471416 -0.828543;
+#A 0 0.61428 0.728564 0.785707 0.828563 0.842849 0.87142 0.87142 0.857134
+0.842849 0.671422 0.571423 0.414282 0.328569 0.199998 0.0571429 -0.314282
+-0.857133 -1.15713;
 #X coords 0 1 18 -1 200 140 1;
-#X restore 391 241 graph;
+#X restore 398 238 graph;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array zweiarray 8 float 3;
-#A 0 40.8205 38.1 43.543 51.7075 63.5007 80.7368 96.1586 113.395;
+#A 0 40.8205 38.1 87.9941 102.508 66.2212 83.4574 96.1586 113.395;
 #X coords 0 0 8 127 200 140 1 0 0;
 #X restore 400 407 graph;
 #X obj 404 588 array get zweiarray;
@@ -88,6 +88,8 @@ help file;
 #X floatatom 548 657 5 0 0 0 - - -;
 #X floatatom 567 676 5 0 0 0 - - -;
 #X floatatom 584 694 5 0 0 0 - - -;
+#X obj 582 201 pipe;
+#X obj 224 215 ftom;
 #X connect 1 0 5 0;
 #X connect 2 0 3 0;
 #X connect 4 0 1 0;
