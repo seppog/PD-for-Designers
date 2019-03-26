@@ -1,0 +1,46 @@
+#N canvas 75 23 560 565 10;
+#X obj 61 108 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7400 1;
+#X obj 72 142 pipe 20;
+#X obj 57 167 -;
+#X floatatom 57 195 5 0 0 0 - - -;
+#X text 200 107 move the slider - You see the delta in the number box
+;
+#X text 130 138 depending on the speed of the change You have to adjust
+the delay here;
+#X text 50 20 how to deal with velocity: Delay the position data \,
+substract it from the actual one and You get a value for velocity and
+direction;
+#X obj 59 272 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7100 1;
+#X floatatom 54 323 5 0 0 0 - - -;
+#X text 199 271 move the slider - You see the delta in the number box
+;
+#N canvas 699 98 450 300 velocity_with_zero 0;
+#X obj 122 165 pipe 20;
+#X obj 107 190 -;
+#X text 180 161 depending on the speed of the change You have to adjust
+the delay here;
+#X obj 107 138 f;
+#X obj 107 114 metro 20;
+#X obj 106 91 loadbang;
+#X obj 89 91 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 123 63 inlet;
+#X obj 107 215 outlet;
+#X connect 0 0 1 1;
+#X connect 1 0 8 0;
+#X connect 3 0 0 0;
+#X connect 3 0 1 0;
+#X connect 4 0 3 0;
+#X connect 5 0 4 0;
+#X connect 6 0 4 0;
+#X connect 7 0 3 1;
+#X restore 55 296 pd velocity_with_zero;
+#X text 59 250 with putting out zero if the sider is not moved;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 1 0 2 1;
+#X connect 2 0 3 0;
+#X connect 7 0 10 0;
+#X connect 10 0 8 0;
