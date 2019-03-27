@@ -1,0 +1,44 @@
+#N canvas 132 326 760 499 10;
+#X floatatom 43 81 5 0 0 0 - - -;
+#X obj 43 106 abs;
+#X floatatom 44 131 5 0 0 0 - - -;
+#X obj 112 102 moses 0;
+#X floatatom 112 129 5 0 0 0 - - -;
+#X floatatom 151 130 5 0 0 0 - - -;
+#X text 40 26 two ways to deal with (sensor) data gong from -1 to +1
+;
+#X text 22 400 Patch created by Seppo Gruendler for Sound&Interaction
+1 and Interaction Design 1 course at Master Program courses in Interaciotn
+Desin and Sound Design at FH JOANNEUM Institut of Design and Communication
+https://www.fh-joanneum.at/institut/design-kommunikation/ all patches
+are CC BY-NC 4;
+#X text 211 46 move slider for simulating data or klick toggle to start
+random generation of data;
+#N canvas 77 102 654 477 data 0;
+#X obj 126 102 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 1000 1;
+#X obj 130 127 - 64;
+#X obj 131 152 / 64;
+#X obj 130 278 outlet;
+#X obj 104 102 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 59 149 random 127;
+#X obj 58 190 line;
+#X obj 59 128 metro 100;
+#X msg 58 169 \$1 100;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 4 0 7 0;
+#X connect 5 0 8 0;
+#X connect 6 0 0 0;
+#X connect 7 0 5 0;
+#X connect 8 0 6 0;
+#X coords 0 -1 1 1 158 20 2 100 100;
+#X restore 43 49 pd data;
+#X connect 0 0 1 0;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 3 0 4 0;
+#X connect 3 1 5 0;
+#X connect 9 0 0 0;
