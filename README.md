@@ -7,3 +7,6 @@ Externals needed (install via deken, help->find externals, don't download direct
 Zexy, comport, pduino
 
 one by one patches we do at the lectures will be put here.
+
+go back to virtual campus: https://virtueller-campus.fh-joanneum.at/2018-19/course/view.php?id=5418#section-4
+(sorry for FH OANNEUM Students only)
