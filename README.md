@@ -8,19 +8,24 @@ Externals needed (install via deken, help->find externals, don't download direct
 Zexy, comport, pduino
 
 ## Migrate to Raspberry PI and Pisound
-__Pisoud Docs:__ https://blokas.io/pisound/docs/
-all infos for session are found there
-and
-heres the link to download the sd-card image:
-__Patchbox-os: __ https://blokas.io/patchbox-os/docs/GettingStarted/
+__Pisoud Docs:__
+https://blokas.io/pisound/docs/
+__link to download the sd-card image:__
+https://blokas.io/patchbox-os/
+__Getting Started:__https://blokas.io/patchbox-os/docs/GettingStarted/
+You also need a __VNC viewer__ to remotely control Your PiSound machine:
+https://www.realvnc.com/en/connect/download/viewer/
 
 
 *Task for first workshop session:*
 1. "Build" the Raspi-Sounds With Case etc.
 2. Burn SD cards
 3. Test wireless connection and Pisound app
-4. Migrate Your ID/SD patch to the raspberry
-5. Develope a testing situation without Arduino
+4. Start VNC and fiddle around with PiSound
+
+*Homework*
+1. Migrate Your ID/SD patch to the raspberry
+2. Develop a testing situation without Arduino simulating the sensory input via Midi/OSC et al.
 
 ## Different additional topics
 one by one patches we do at the lectures will be put here.
