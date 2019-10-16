@@ -15,7 +15,7 @@ http://www.pd-tutorial.com/english/index.html
 Alexandre Torres Porres:
 https://github.com/porres/Live-Electronic-Music-Tutorial/tree/master/Examples
 
-still confused, even more tutorials:  
+still confused, even more tutorials:
 https://puredata.info/docs/tutorials/
 
 ## Migrate to Raspberry PI and Pisound
@@ -37,7 +37,7 @@ https://www.realvnc.com/en/connect/download/viewer/
 *Task for first workshop session:*
 1. "Build" the Raspi-Sounds With Case etc.
 2. Burn SD cards / Install Etcher
-3. Test wireless connection and Pisound app
+3. Test wireless connection/SSH and Pisound app
 4. Start VNC and fiddle around with PiSound and the provided Software
 
 *Homework*
@@ -47,6 +47,10 @@ https://www.realvnc.com/en/connect/download/viewer/
 
 ## Different additional topics
 one by one patches we do at the lectures will be put here.
+
+problrs with ssh - need to disable SSH host key checking, look here:
+https://linuxcommando.blogspot.com/2008/10/how-to-disable-ssh-host-key-checking.html?m=1
+
 
 go back to virtual campus: https://virtueller-campus.fh-joanneum.at/2018-19/course/view.php?id=5418#section-4
 (sorry for FH OANNEUM Students only)
